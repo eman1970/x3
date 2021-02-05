@@ -40,5 +40,15 @@ border: 1px solid #000000;
            
         }
       }
+
+      .desktopNavigationTabs2 {
+ 
+  position: absolute;
+  margin-top:-15px;
+        margin-left: -160px;
+        align-items: center;
+        
+      
+    }
     
  

@@ -1,7 +1,11 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
-import './Sidebar.css'
+ import './Sidebar.css'
 import RoutingPath from '../../../../routes/RoutingPath'
+import { useHistory } from 'react-router-dom'
+import { useContext } from 'react'
+import { UserContext } from '../../../../shared/provider/UserProvider'
+import { Profile } from '../../../profile/Profile'
+
 
 
 
@@ -12,8 +16,18 @@ export const Sidebar = (props: { drawerIsOpen: boolean, drawerHandler: Function 
         history.push(selectedView)
         props.drawerHandler(false)
 
+     
 
     }
+   
+    const [authUser, setAuthUser] = useContext(UserContext)
+    const displaySignInButtonOnAuthetication = () => {
+
+        return authUser?.username
+            ? <div className="profile"><Profile /></div>
+            : <span className="signInButton" onClick={() => handleRedirect(RoutingPath.signInView)}>signin</span>
+    }
+
 
 
     return (
@@ -29,6 +43,11 @@ export const Sidebar = (props: { drawerIsOpen: boolean, drawerHandler: Function 
                 <li className="liTabs" onClick={() => handleRedirect(RoutingPath.shopView)}>shop</li>
 
             </ul>
+
+            
+            <div className="desktopNavigationTabs2">
+    {displaySignInButtonOnAuthetication()}
+    </div>
 
 
         </div>
