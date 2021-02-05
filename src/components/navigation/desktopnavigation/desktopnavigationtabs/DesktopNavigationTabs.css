@@ -1,6 +1,7 @@
 .ulTabsWrapper {
 
     list-style-type: none;
+    width: 100%;
 }
 
 .liTabs {

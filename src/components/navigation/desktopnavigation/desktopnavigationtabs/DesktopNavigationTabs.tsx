@@ -10,6 +10,7 @@ export const DesktopNavigationTabs = () => {
 
     return (
         <ul className="ulTabsWrapper">
+            <li className="liTabs" onClick={() => history.push(RoutingPath.homeView)}>home</li>
             <li className="liTabs" onClick={() => history.push(RoutingPath.accessoriesView)}>accessories</li>
             <li className="liTabs" onClick={() => history.push(RoutingPath.brandsView)}>brands</li>
             <li className="liTabs" onClick={() => history.push(RoutingPath.expertisView)}>expertis</li>

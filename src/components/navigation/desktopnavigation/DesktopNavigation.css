@@ -31,8 +31,9 @@ color: #FFFFFF;
 
 .desktopNavigationTabs {
 
-    grid-columns: 7/9;
+    margin-left: 108px;
     align-items: center;
+    
   
 }
  
