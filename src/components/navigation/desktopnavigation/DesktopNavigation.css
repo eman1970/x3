@@ -1,0 +1,40 @@
+.desktopNavigationWrapper {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    background-color: #b5d5d1;
+    border: 1px solid #000000;
+}
+.navigationLogotype {
+
+    width: 90px;
+
+
+}
+
+.navigationLogotype img{
+
+position: absolute;
+margin-left: 218px;
+margin-top: 16px;
+
+}
+
+.signInButton, .profile {
+position: absolute;
+margin-left: 218px;
+margin-top: 16px;
+font-family: 'Roboto', sans-serif;
+font-weight: 1000;
+color: #FFFFFF;
+}
+
+
+.desktopNavigationTabs {
+
+    grid-columns: 7/9;
+    align-items: center;
+  
+}
+ 
+   
+ 
