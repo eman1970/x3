@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-
 import { HomeView } from '../view/HomeView'
 import { SignInView } from '../view/SignInView'
 import RoutingPath from './RoutingPath'
