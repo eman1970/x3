@@ -6,7 +6,9 @@ import RoutingPath from '../routes/RoutingPath'
 import { UserContext } from '../shared/provider/UserProvider'
 
 
+
 export const SignInView = () => {
+
     const history = useHistory()
     const [loginCredentials, setLoginCredentials] = useState<loginCredentials>({ username: '', password: '' })
     const [authUser, setAuthUser] = useContext(UserContext)
@@ -16,8 +18,13 @@ export const SignInView = () => {
         setAuthUser(loginCredentials)
         history.push(RoutingPath.homeView)
 
+
     }
-    
+
+
+    const handleChange = (event: any) => {
+        setLoginCredentials({ ...loginCredentials, [event.target.name]: event.target.value });
+    };
 
     return (
 
@@ -25,13 +32,13 @@ export const SignInView = () => {
             <br />
 
             <form>
+
+                <h1> </h1>
                 <input placeholder='username'
-                    onChange={event => setLoginCredentials({ ...loginCredentials, username: event.target.value })} /><br />
+                    type="text" name="username" onChange={handleChange} /><br />
                 <input placeholder='password'
-                    onChange={event => setLoginCredentials({ ...loginCredentials, password: event.target.value })} />
+                    type="text" name="password" onChange={handleChange} />
                 <button onClick={() => signIn()}>Sign in</button>
-
-
             </form>
 
         </div>
