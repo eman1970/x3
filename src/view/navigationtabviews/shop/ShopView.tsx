@@ -34,11 +34,11 @@ export const ShopView = () => {
         <div>
 
             <h1>This is the shopView</h1>
-            <h1>Name: {starwarsData?.data?.name}</h1>
-            <h1>Haircolor: {starwarsData?.data?.hair_color}</h1>
-            <h1>Gender: {starwarsData?.data?.gender}</h1>
-            <h1>Birth year: {starwarsData?.data?.birth_year}</h1>
-            <h1>Height: {starwarsData?.data?.height}</h1>
+            <h3>Name: {starwarsData?.data?.name}</h3>
+            <h3>Haircolor: {starwarsData?.data?.hair_color}</h3>
+            <h3>Gender: {starwarsData?.data?.gender}</h3>
+            <h3>Birth year: {starwarsData?.data?.birth_year}</h3>
+            <h3>Height: {starwarsData?.data?.height}</h3>
             <button onClick={() => makeSureCountWillNeverGoBelowValue1()}>Get previous character:</button>
             <button onClick={() => setCount(count + 1)}>Get next character:</button>
 

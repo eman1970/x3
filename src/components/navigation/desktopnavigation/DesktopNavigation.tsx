@@ -1,5 +1,5 @@
 import './DesktopNavigation.css'
-import Logotype from '../../../shared/images/logotype.svg'
+import th2 from '../../../shared/images/th2.png'
 import { useHistory } from 'react-router-dom'
 import { useContext } from 'react'
 import RoutingPath from '../../../routes/RoutingPath'
@@ -22,7 +22,7 @@ export const DesktopNavigation = () => {
         <div className="desktopNavigationWrapper">
 
             <img onClick={() => history.push(RoutingPath.homeView)} className="navigationLogotype"
-                src={Logotype}
+                src={th2}
                 alt={''} />
                 <DesktopNavigationTabs />
 
