@@ -7,3 +7,9 @@
       font-weight: bold;
       color: #000000;
   }
+
+  @media screen and (max-width: 480px) {
+    .signInForm {
+        width: 45%;
+      }
+  }
