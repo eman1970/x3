@@ -19,7 +19,7 @@ export const NewsView = () => {
     return (
         <div>
 
-            <h1>NewsView</h1>
+            <h1>newsView</h1>
             <button onClick={() => update()}>Update authUser</button><br />
             <button onClick={() => console.log(JSON.stringify(msg))}>Console authUser</button><br />
             <button onClick={() => alert(JSON.stringify(authUser))}>Alert authUser</button><br />

@@ -23,7 +23,7 @@ export const ExpertisView = () => {
 
     return (
         <div>
-            <h1>This is the ExpertisView</h1>
+            <h1>This is the expertisView</h1>
             <span><h2>First Name</h2><input value={firstName} onChange={handleFirstNameChange} /></span><br />
             <span><h2>Last Name</h2>  <input value={lastName} onChange={handleLastNameChange} /></span>
             <h3>
