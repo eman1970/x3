@@ -1,30 +1,27 @@
 import React from 'react'
 import { useContext, useState } from "react";
-import { UserContext } from '../../../shared/provider/UserProvider';
+import './NewsView.css'
+ 
+import { TestContext } from '../../../shared/provider/TestProvider';
 
 
 
 
 export const NewsView = () => {
-    const [authUser, setAuthUser] = useContext(UserContext)
-    const [msg, setMsg] = useState();
+    const [testUser, setTestUser] = useContext(TestContext)
+  
 
-
-    const update = () => {
-        setMsg(authUser)
-
-    }
+ 
 
 
     return (
         <div>
 
-            <h1>newsView</h1>
-            <button onClick={() => update()}>Update authUser</button><br />
-            <button onClick={() => console.log(JSON.stringify(msg))}>Console authUser</button><br />
-            <button onClick={() => alert(JSON.stringify(authUser))}>Alert authUser</button><br />
-            <pre>{JSON.stringify(msg, null, 2)}</pre>
-            <pre>{JSON.stringify(Date(), null, 2)}</pre>
+            <h1>This is the newsView</h1>
+            <p>{testUser}</p>
+            <input placeholder="update and display in BrandsView" type="text" onChange={event => setTestUser(event.target.value)} />
+       
+        
 
         </div>
 

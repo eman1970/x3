@@ -1,13 +1,14 @@
-import React from 'react' 
-import {NewsView} from '../news/NewsView'
+import React from 'react'
+import {useContext} from 'react'
+import { TestContext } from '../../../shared/provider/TestProvider';
 
 export const BrandsView = () => {
+    const [testUser, setTestUser] = useContext(TestContext)
     return (
         <div>
             <h1>This is the brandsView</h1>
-            <NewsView />
+            <p>{testUser}</p>
             
-           
         </div>
     )
 }
