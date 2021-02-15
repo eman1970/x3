@@ -19,7 +19,7 @@ export const NewsView = () => {
 
             <h1>This is the newsView</h1>
             <p>{testUser}</p>
-            <input placeholder="update and display in BrandsView" type="text" onChange={event => setTestUser(event.target.value)} />
+            <input className="testForm" placeholder="update and display in BrandsView" type="text" onChange={event => setTestUser(event.target.value)} />
        
         
 

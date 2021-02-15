@@ -4,6 +4,7 @@ import { loginCredentials } from '../shared/interface/Interface'
 import { useHistory } from 'react-router-dom'
 import RoutingPath from '../routes/RoutingPath'
 import { UserContext } from '../shared/provider/UserProvider'
+import './SignInView.css'
 
 
 
@@ -35,9 +36,9 @@ export const SignInView = () => {
             <form>
 
               <h1>SignInView</h1>
-                <input placeholder='username'
+                <input className="signInForm" placeholder='username'
                     type="text" name="username" onChange={handleChange} /><br />
-                <input placeholder='password'
+                <input className="signInForm" placeholder='password'
                     type="text" name="password" onChange={handleChange} />
                 <button onClick={() => signIn()}>Sign in</button>
             </form>
