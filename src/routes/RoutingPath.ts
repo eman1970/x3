@@ -6,6 +6,7 @@ const brandsView = '/brands'
 const expertisView = '/expertis'
 const newsView = '/news'
 const shopView = '/shop'
+ 
 
 const settingsView = '/authentication/settings'
 
@@ -19,7 +20,8 @@ brandsView,
 expertisView,
 newsView,
 shopView,
-settingsView
+settingsView,
+ 
 
 
 

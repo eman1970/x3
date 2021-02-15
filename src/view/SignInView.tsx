@@ -24,7 +24,7 @@ export const SignInView = () => {
 
     const handleChange = (event: any) => {
         setLoginCredentials({ ...loginCredentials, [event.target.name]: event.target.value });
-        console.log("Hello")
+        
     };
 
     return (
@@ -34,7 +34,7 @@ export const SignInView = () => {
 
             <form>
 
-              <p>Hello</p>
+              <h1>SignInView</h1>
                 <input placeholder='username'
                     type="text" name="username" onChange={handleChange} /><br />
                 <input placeholder='password'

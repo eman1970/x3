@@ -4,8 +4,10 @@ import { useState, createContext }  from 'react'
 export const UserContext = createContext<any>(null)
 
 export const UserProvider = (props: {children: React.ReactChild}) => {
-const [authUser, setAuthUser] = useState()
-const {children} = props
+ 
+const [authUser, setAuthUser] = useState();
+ 
+const {children} = props 
 
 
     return (
@@ -14,3 +16,5 @@ const {children} = props
             </UserContext.Provider>
     )
 }
+
+export default UserContext;

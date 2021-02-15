@@ -1,20 +1,19 @@
-import './Greeting.css'
+import React, { Component, useState } from 'react';
+export default function Greeting() {
+  
+  const [firstName, setFirstName] = useState("Bat");
+  const [lastName, setLastName] = useState("Man");;
 
-export const Greeting = (props: { name: string }) => {
+  const handleFirstNameChange = (e: { target: { value: React.SetStateAction<string>; }; }) => setFirstName(e.target.value);
+  const handleLastNameChange = (e: { target: { value: React.SetStateAction<string>; }; }) => setLastName(e.target.value);
 
-
-    return (
-
-        <div>
-            {props.name}
-            <h1 className="title">Hello! Awesome website ok!</h1>
-
-
-        </div>
-
-    )
-
-
-
+  return (
+    <div>
+      <input value={firstName} onChange={handleFirstNameChange} /><br />
+      <input value={lastName} onChange={handleLastNameChange} />
+      <p>
+        Hello, <span>{firstName} {lastName}</span>
+      </p>
+    </div>
+  );
 }
-
