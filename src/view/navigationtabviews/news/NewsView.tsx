@@ -10,7 +10,7 @@ export const NewsView = () => {
     const [inputValue, setInputValue] = useState<any>()
 
     const updateGlobalList = (x: any) => {
-      return  <div dangerouslySetInnerHTML={{__html: '<br />'}} /> + setTestUser(testUser.concat(x)) 
+      return  setTestUser(testUser.concat(x))
     }
 
     const handleSubmit = () =>{
