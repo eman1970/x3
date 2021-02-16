@@ -5,7 +5,7 @@ export const TestContext = createContext<any>(null)
 
 export const TestProvider = (props: {children: React.ReactChild}) => {
  
-const [testUser, setTestUser] = useState('Test');
+const [testUser, setTestUser] = useState(['test']);
  
 const {children} = props 
 

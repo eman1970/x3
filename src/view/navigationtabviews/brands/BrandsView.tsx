@@ -7,7 +7,7 @@ export const BrandsView = () => {
     return (
         <div>
             <h1>This is the brandsView</h1>
-            <p>{testUser}</p>
+            {testUser.map((x: any, i: number)=><div><span>{x}</span><br /></div>)}
             
         </div>
     )
